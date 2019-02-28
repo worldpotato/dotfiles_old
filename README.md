@@ -3,6 +3,7 @@ My Dotfiles for some apps I use. I use soft-links to bring the files to the righ
 
 ### My system:
 Ubuntu 18.04
+
 Kernel: 4.15.0-45-generic x86_64
 
 

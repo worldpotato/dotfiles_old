@@ -4,11 +4,9 @@ My Dotfiles for some apps I use. I use soft-links to bring the files to the righ
 
 ## commit message template
 for a better overview add this template to your git config.
-Use:
-	```
+Use:	```
 	git config --local commit.template ./.commit_template.txt
-	```
-
+	``` 
 in the root folder of this repository to add apply the config only to this repository.
 
 ## i3

@@ -20,3 +20,9 @@ ln -sf [...]/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ## zsh
 
 ln -sf [...]/dotfiles/zsh/.zshrc ~/.zshrc
+
+## i3status
+```
+sudo ln -sf ~/Repositories/dotfiles/i3status/i3status.conf /etc/i3status.conf
+```
+

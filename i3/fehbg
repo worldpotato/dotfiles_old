@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-scale' '~/.config/i3/huette.jpg' 
+'feh' '--bg-scale' "$HOME/.config/i3/huette.jpg" 

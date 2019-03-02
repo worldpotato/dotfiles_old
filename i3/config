@@ -182,7 +182,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
 # background
-exec --no-startup-id ~/.fehbg
+exec --no-startup-id ~/.config/i3/fehbg
 
 # default start applications
 exec --no-startup-id firefox

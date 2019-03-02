@@ -188,6 +188,7 @@ exec --no-startup-id ~/.fehbg
 exec --no-startup-id firefox
 exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id thunderbird
+exec --no-startup-id keepassxc
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #666666 #555555 #eeeeee #555555   #285577

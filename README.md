@@ -23,11 +23,18 @@ ln -sf [...]/dotfiles/i3/ ~/.config/i3/
 ```
 ln -sf [...]/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ```
+
 ## zsh
 ```
 ln -sf [...]/dotfiles/zsh/.zshrc ~/.zshrc
 ```
+
+## zsh Theme
+```
+ln -s [...]/zsh/worldpotato.zsh-theme ~/.oh-my-zsh/themes/worldpotato.zsh-theme
+```
+
 ## i3status
 ```
-sudo ln -sf [...]dotfiles/i3status/i3status.conf /etc/i3status.conf
+sudo ln -sf [...]/dotfiles/i3status/i3status.conf /etc/i3status.conf
 ```

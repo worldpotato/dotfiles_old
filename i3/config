@@ -190,6 +190,7 @@ exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
 
+# colors
 # class                 border  backgr. text    indicator child_border
 client.focused          #666666 #555555 #eeeeee #555555   #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a

@@ -170,7 +170,7 @@ exec --no-startup-id xinput set-prop "ELAN0501:00 04F3:3037 Touchpad" "libinput 
 # lockscreen
 bindsym $mod+l exec "~/.config/i3/fuzzy_lock.sh" 
 #exec --no-startup-id xautolock -time 1 -locker '~/.config/i3/fuzzy_lock.sh' &
-exec --no-startup-id xautolock -detectsleep -time 1 -locker "~/.config/i3/fuzzy_lock.sh" &
+exec --no-startup-id xautolock -detectsleep -time 5 -locker "~/.config/i3/fuzzy_lock.sh" &
 
 # sound
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume

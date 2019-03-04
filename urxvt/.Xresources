@@ -1,0 +1,63 @@
+! Uncomment to use the historical terminfo entry
+
+!URxvt.termName: rxvt
+
+URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=14:antialias=true:hinting=true
+!URxvt.font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
+URxvt.color0: black
+URxvt.color1: red3
+URxvt.color2: green3
+URxvt.color3: yellow3
+URxvt.color4: DodgerBlue1
+URxvt.color5: magenta3
+URxvt.color6: cyan3
+URxvt.color7: gray90
+URxvt.color8: gray50
+URxvt.color9: red
+URxvt.color10: green
+URxvt.color11: yellow
+URxvt.color12: SteelBlue1
+URxvt.color13: magenta
+URxvt.color14: cyan
+URxvt.color15: white
+URxvt.colorUL: white
+URxvt.colorBD: yellow
+URxvt.reverseVideo: true
+
+!copy paste
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! transparenz
+URxvt*inheritPixmap: true 
+URxvt*shading: 50
+
+! scroll bar
+URxvt*scrollBar: false
+
+! use Firefox for links
+URxvt*urlLauncher: firefox
+
+! avoid strange modes by copy and paste
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Examples for custom keysyms overrides
+
+!URxvt.keysym.KP_Up: ^[[A
+!URxvt.keysym.KP_Right: ^[[C
+!URxvt.keysym.KP_Left: ^[[D
+!URxvt.keysym.KP_Down: ^[[B
+!URxvt.keysym.KP_Insert: ^[[2~
+!URxvt.keysym.KP_Delete: ^[[3~
+!URxvt.keysym.KP_Add: +
+!URxvt.keysym.KP_Subtract: -
+!URxvt.keysym.KP_Multiply: *
+!URxvt.keysym.KP_Divide: /
+!URxvt.keysym.KP_Enter: ^M
+
+! Uncomment for aterm-like scrolling keys
+
+!URxvt.keysym.Shift-Up: command:\033]720;1\007
+!URxvt.keysym.Shift-Down: command:\033]721;1\007

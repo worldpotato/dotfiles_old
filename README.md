@@ -38,3 +38,8 @@ ln -s [...]/zsh/worldpotato.zsh-theme ~/.oh-my-zsh/themes/worldpotato.zsh-theme
 ```
 sudo ln -sf [...]/dotfiles/i3status/i3status.conf /etc/i3status.conf
 ```
+
+## URxvt
+```
+ln -sf ~/Repositories/dotfiles/urxvt/.Xresources ~/.Xresources
+```

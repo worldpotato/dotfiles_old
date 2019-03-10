@@ -34,6 +34,11 @@ ln -sf [...]/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s [...]/zsh/worldpotato.zsh-theme ~/.oh-my-zsh/themes/worldpotato.zsh-theme
 ```
 
+## zsh tmux_plugin
+```
+ln -s [...]/zsh/tmux ~/.oh-my-zsh/plugins/tmux
+```
+
 ## i3status
 ```
 sudo ln -sf [...]/dotfiles/i3status/i3status.conf /etc/i3status.conf

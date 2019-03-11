@@ -120,6 +120,7 @@ bindsym $mod+Shift+0 move container to workspace 10 Spotify
 assign [class="Firefox"] 7 www
 assign [class="Thunderbird"] 8 Mail
 assign [class="MineTime"] 9 Cal
+assign [class="Master PDF Editor 5"] 6 pdf
 assign [class="Texmaker"] 5 tex
 for_window [class="Spotify"] move to workspace 10 Spotify
 

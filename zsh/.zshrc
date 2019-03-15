@@ -62,7 +62,7 @@ ZSH_THEME="worldpotato"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
+plugins=(git tmux z command-not-found extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,3 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vtop="vtop -t aid"
+
+. /home/worldpotato/Repositories/dotfiles/zsh/z/z.sh
+
+eval $(thefuck --alias)

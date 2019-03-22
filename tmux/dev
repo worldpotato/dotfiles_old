@@ -1,5 +1,5 @@
 selectp -t 0 # select the first (0) pane
-splitw -h -p 30 'vtop -t aid' # split it into two halves
+splitw -h -p 35 'vtop -t aid' # split it into two halves
 
 selectp -t 1 # select the new, second (1) pane
 splitw -v -p 50 'ranger' # split it into two halves

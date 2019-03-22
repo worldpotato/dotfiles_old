@@ -100,3 +100,7 @@ alias vtop="vtop -t aid"
 . /home/worldpotato/Repositories/dotfiles/zsh/z/z.sh
 
 eval $(thefuck --alias)
+
+# update path for flatter
+
+export PATH="$PATH:/home/worldpotato/flutter/flutter/bin"

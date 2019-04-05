@@ -103,4 +103,4 @@ eval $(thefuck --alias)
 
 # update path for flatter
 
-export PATH="$PATH:/home/worldpotato/flutter/flutter/bin"
+export PATH="$PATH:/home/worldpotato/Flutter/bin"

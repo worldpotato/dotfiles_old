@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-scale' "$HOME/.config/i3/huette.jpg" 
+'Esetroot' '-s' "$HOME/.config/i3/huette.jpg" 

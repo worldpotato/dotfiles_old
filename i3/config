@@ -200,10 +200,10 @@ exec --no-startup-id nextcloud-client
 
 # colors: CFF09E A8DBA8 79BD9A 3B8686 0B486B
 # class                 border  backgr. text    indicator child_border
-client.focused          #3B8686 #3B8686 #000000 #3B8686   #3B8686 
-client.focused_inactive #0B486B #0B486B #A8DBA8 #3B8686   #3B8686
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.focused          #A8DBA8 #3B8686 #000000 #79BD9A   #79BD9A 
+client.focused_inactive #3B8686 #0B486B #A8DBA8 #3B8686   #0B486B
+client.unfocused        #333333 #222222 #888888 #292d2e   #0B486B
+client.urgent           #2f343a #900000 #ffffff #900000   #AA0000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #0B486B

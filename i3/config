@@ -177,8 +177,7 @@ exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natu
 
 # lockscreen
 bindsym $mod+l exec "~/.config/i3/fuzzy_lock.sh" 
-#exec --no-startup-id xautolock -time 1 -locker '~/.config/i3/fuzzy_lock.sh' &
-exec --no-startup-id xautolock -detectsleep -time 5 -locker "~/.config/i3/fuzzy_lock.sh" &
+exec --no-startup-id xautolock -time 5 -locker '~/.config/i3/fuzzy_lock.sh' &
 
 # sound
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume

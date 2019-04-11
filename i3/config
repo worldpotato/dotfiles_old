@@ -210,3 +210,12 @@ client.background       #0B486B
 
 # make the titlebar disapear
 new_window 1pixel
+
+for_window [class=".*"] border pixel 1
+
+gaps inner 5
+gaps outer 1
+#workspace <ws> gaps [inner|outer|horizontal|vertical|top|left|bottom|right] 2
+
+# Activate smart borders (always)
+smart_borders on

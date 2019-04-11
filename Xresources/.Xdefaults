@@ -9,7 +9,7 @@ URxvt*transparent: true
 
 # shading - 0 to 99 darkens, 101 to 200 lightens.
 #   Don't use with tintColor; just use a darker or lighter color instead.
-URxvt*shading: 80
+URxvt*shading: 30
 
 # scrollback buffer lines - 65535 is max on most machines (64 is default)
 URxvt*saveLines: 12000

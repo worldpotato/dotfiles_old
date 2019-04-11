@@ -55,7 +55,7 @@ URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=14:antialias=true:hinting=tr
 #  the following line to your ~/.bashrc ($HOME/.bashrc) file under
 #  the heading "# User specific aliases and functions":
 #   alias ls="ls -h --color=auto"
-URxvt*color4: RoyalBlue
+URxvt*color4: Aquamarine
 URxvt*color12: DarkCyan
 
 # scrollbar - true (default) or false

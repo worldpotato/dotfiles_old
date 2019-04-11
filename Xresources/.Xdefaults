@@ -66,3 +66,9 @@ URxvt*scrollBar_right: false
 
 # scrollbar style - rxvt (default), plain, next, or xterm
 URxvt*scrollstyle: xterm
+
+# Fade the text by the given percentage when focus is lost. This is neat, when I switch to a different window, or switch to a different machine ala synergy, it will fade the screen slightly.
+URxvt*fading:  30
+
+# Use visual bell on receipt of a bell character. Helpful to be used with inputrc and tmux.
+URxvt*visualBell:  true

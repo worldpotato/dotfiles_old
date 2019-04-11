@@ -127,7 +127,7 @@ assign [class="Master PDF Editor 5"] 2 pdf
 for_window [class="Foxit Reader"] move to workspace 2 pdf
 for_window [class="MATLAB R2018b - academic use"] move to workspace 3 ide
 assign [class="jetbrains-studio"] 3 ide
-assign [class="Texmaker"] 3 tex
+assign [class="Texmaker"] 3 ide
 for_window [class="Spotify"] move to workspace 10 Spotify
 
 # reload the configuration file

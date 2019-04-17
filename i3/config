@@ -131,7 +131,7 @@ for_window [class="MATLAB R2018b - academic use"] move to workspace 3 ide
 assign [class="jetbrains-studio"] 3 ide
 assign [class="jetbrains-clion"] 3 ide
 assign [class="Texmaker"] 3 ide
-for_window [class="Spotify"] move to workspace 10 Spotify
+for_window [class="Spotify"] move to workspace Spotify
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

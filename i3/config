@@ -168,9 +168,11 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+#bar {
+#        status_command i3status
+#}
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Touchpad behaviour
 #exec --no-startup-id xinput set-prop "ELAN0501:00 04F3:3037 Touchpad" "libinput Natural Scrolling Enabled Default" 1

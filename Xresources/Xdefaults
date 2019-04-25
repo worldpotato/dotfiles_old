@@ -9,7 +9,7 @@ URxvt*transparent: true
 
 # shading - 0 to 99 darkens, 101 to 200 lightens.
 #   Don't use with tintColor; just use a darker or lighter color instead.
-URxvt*shading: 30
+URxvt*shading: 80
 
 # scrollback buffer lines - 65535 is max on most machines (64 is default)
 URxvt*saveLines: 12000
@@ -55,7 +55,7 @@ URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=14:antialias=true:hinting=tr
 #  the following line to your ~/.bashrc ($HOME/.bashrc) file under
 #  the heading "# User specific aliases and functions":
 #   alias ls="ls -h --color=auto"
-URxvt*color4: Aquamarine
+#URxvt*color4: Aquamarine
 URxvt*color12: DarkCyan
 
 # scrollbar - true (default) or false

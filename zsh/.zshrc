@@ -62,7 +62,7 @@ ZSH_THEME="worldpotato"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux z command-not-found extract)
+plugins=(git tmux z command-not-found extract sudo fzf colored-man-pages zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -96,6 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vtop="vtop -t aid"
+alias tty-clock="tty-clock -sDcC 4"
+alias ip="ip -c"
 
 . /home/worldpotato/Repositories/dotfiles/zsh/z/z.sh
 
@@ -104,6 +106,7 @@ eval $(thefuck --alias)
 # update path for flatter
 
 export PATH="$PATH:/home/worldpotato/Flutter/bin"
+export PATH="$PATH:/home/worldpotato/userscripts"
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
@@ -111,3 +114,15 @@ fi
 if [[ ! "$SSH_AUTH_SOCK" ]]; then
     eval "$(<~/.ssh-agent-thing)"
 fi
+
+# enable font
+xset +fp /home/worldpotato/.local/share/fonts
+xset fp rehash
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/Repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# added by travis gem
+[ -f /home/worldpotato/.travis/travis.sh ] && source /home/worldpotato/.travis/travis.sh
+

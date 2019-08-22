@@ -48,3 +48,5 @@ sudo ln -sf [...]/dotfiles/i3status/i3status.conf /etc/i3status.conf
 ```
 ln -s [...]/dotfiles/Xresources/.Xdefaults .Xdefaults
 ```
+
+TODO: Spotify polybar skript

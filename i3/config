@@ -93,9 +93,10 @@ bindsym $mod+space focus mode_toggle
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1 cli
+bindsym $mod+z workspace zsh
+bindsym $mod+1 workspace 1 ide
 bindsym $mod+2 workspace 2 pdf
-bindsym $mod+3 workspace 3 ide
+bindsym $mod+3 workspace 3 tex
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
@@ -106,11 +107,12 @@ bindsym $mod+0 workspace 10
 bindsym $mod+s workspace Spotify
 bindsym $mod+b workspace Browser
 bindsym $mod+m workspace Mail
+bindsym $mod+c workspace Com
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1 cli
+bindsym $mod+Shift+1 move container to workspace 1 ide
 bindsym $mod+Shift+2 move container to workspace 2 pdf
-bindsym $mod+Shift+3 move container to workspace 3 ide
+bindsym $mod+Shift+3 move container to workspace 3 tex
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
@@ -121,20 +123,25 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Shift+s move container to workspace Spotify
 bindsym $mod+Shift+b move container to workspace Browser
 bindsym $mod+Shift+m move container to workspace Mail
+bindsym $mod+Shift+c move container to workspace Com
 
 # force a window on a named workspace
 assign [class="Firefox"] Browser
 assign [class="Thunderbird"] Mail
 assign [class="Master PDF Editor 5"] 2 pdf
 for_window [class="Foxit Reader"] move to workspace 2 pdf
-for_window [class="MATLAB R2018b - academic use"] move to workspace 3 ide
-assign [class="jetbrains-studio"] 3 ide
-assign [class="jetbrains-clion"] 3 ide
-assign [class="Texmaker"] 3 ide
+for_window [class="MATLAB R2019a - academic use"] move to workspace 1 ide
+assign [class="jetbrains-studio"] 1 ide
+assign [class="jetbrains-clion"] 1 ide
+assign [class="jetbrains-idea"] 1 ide
+assign [class="Texmaker"] 3 tex
 for_window [class="Spotify"] move to workspace Spotify
+for_window [class="TeXstudio"] move to workspace 3 tex
+assign [class="TeXstudio"] 3 tex
+assign [class="Slack"] Com
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+#bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -148,16 +155,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -179,10 +186,11 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 #exec --no-startup-id xinput set-prop "ELAN0501:00 04F3:3037 Touchpad" "libinput Tapping Enabled" 1
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.8
 
 # lockscreen
 bindsym $mod+l exec "~/.config/i3/fuzzy_lock.sh" 
-exec --no-startup-id xautolock -time 5 -locker '~/.config/i3/fuzzy_lock.sh' &
+exec --no-startup-id xautolock -time 20 -locker '~/.config/i3/fuzzy_lock.sh' &
 
 # sound
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
@@ -190,8 +198,8 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound vo
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
 
 # background
 exec --no-startup-id ~/.config/i3/fehbg
@@ -203,13 +211,14 @@ exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
 exec --no-startup-id nextcloud-client
 
-# colors: CFF09E A8DBA8 79BD9A 3B8686 0B486B
+
 # class                 border  backgr. text    indicator child_border
-client.focused          #A8DBA8 #3B8686 #000000 #79BD9A   #79BD9A 
-client.focused_inactive #3B8686 #0B486B #A8DBA8 #3B8686   #0B486B
-client.unfocused        #333333 #222222 #888888 #292d2e   #0B486B
-client.urgent           #2f343a #900000 #ffffff #900000   #AA0000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+# indicator: where would the next tile apear?
+client.focused          #FF0000 #FF0000 #000000 #F7CA2A   #F7CA2A 
+client.focused_inactive #FF0000 #FF0000 #FF0000 #279D9A   #279D9A
+client.unfocused        #FF0000 #FF0000 #FF0000 #FF0000   #279D9A
+client.urgent           #FF0000 #FF0000 #000000 #900000   #FF0000
+client.placeholder      #FF0000 #FF0000 #000000 #000000   #ff0000
 
 client.background       #0B486B
 
@@ -227,4 +236,4 @@ smart_borders on
 
 # move workspace between outputs
 bindsym $mod+p move workspace to output right
-bindsym $mod+n move workspace to output right
+bindsym $mod+n move workspace to output left 

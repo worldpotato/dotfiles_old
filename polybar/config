@@ -414,5 +414,5 @@ type = custom/script
 interval = 1
 format-prefix = " "
 format = <label>
-exec = python /home/worldpotato/Repositories/dotfiles/polybar/spotify_status.py -f '{artist}: {song}'
+exec = python /home/worldpotato/repos/dotfiles/polybar/spotify_status.py -f '{artist}: {song}'
 format-underline = #1db954

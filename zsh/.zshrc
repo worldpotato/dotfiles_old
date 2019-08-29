@@ -98,6 +98,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias vtop="vtop -t aid"
 alias tty-clock="tty-clock -sDcC 4"
 alias ip="ip -c"
+alias vi="vim"
 
 . /home/worldpotato/Repositories/dotfiles/zsh/z/z.sh
 

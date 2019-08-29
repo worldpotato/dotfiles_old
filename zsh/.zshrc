@@ -104,7 +104,7 @@ alias vi="vim"
 
 eval $(thefuck --alias)
 
-# update path for flatter
+# PATH 
 
 export PATH="$PATH:/home/worldpotato/Flutter/bin"
 export PATH="$PATH:/home/worldpotato/userscripts"

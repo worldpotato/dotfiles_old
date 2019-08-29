@@ -100,7 +100,7 @@ alias tty-clock="tty-clock -sDcC 4"
 alias ip="ip -c"
 alias vi="vim"
 
-. /home/worldpotato/Repositories/dotfiles/zsh/z/z.sh
+. /home/worldpotato/repos/dotfiles/zsh/z/z.sh
 
 eval $(thefuck --alias)
 

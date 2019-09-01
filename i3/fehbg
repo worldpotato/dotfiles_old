@@ -1,2 +1,2 @@
 #!/bin/sh
-'Esetroot' '-s' "$HOME/.config/i3/bg.png" 
+feh --bg-center "$HOME/.config/i3/bg.png" 

@@ -208,7 +208,7 @@ exec --no-startup-id firefox
 exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
-exec --no-startup-id nextcloud-client
+exec --no-startup-id nextcloud
 
 
 # class                 border  backgr. text    indicator child_border

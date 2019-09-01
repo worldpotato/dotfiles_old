@@ -125,7 +125,7 @@ bindsym $mod+Shift+m move container to workspace Mail
 bindsym $mod+Shift+c move container to workspace Com
 
 # force a window on a named workspace
-assign [class="Firefox"] Browser
+assign [class="firefox"] Browser
 assign [class="Thunderbird"] Mail
 assign [class="Master PDF Editor 5"] 2 pdf
 for_window [class="Foxit Reader"] move to workspace 2 pdf

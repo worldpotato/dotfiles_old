@@ -105,7 +105,6 @@ source /home/worldpotato/repos/dotfiles/zsh/z/z.sh
 eval $(thefuck --alias)
 
 # PATH 
-
 export PATH="$PATH:/home/worldpotato/Flutter/bin"
 export PATH="$PATH:/home/worldpotato/userscripts"
 

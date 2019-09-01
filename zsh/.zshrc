@@ -108,21 +108,6 @@ eval $(thefuck --alias)
 export PATH="$PATH:/home/worldpotato/Flutter/bin"
 export PATH="$PATH:/home/worldpotato/userscripts"
 
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent > ~/.ssh-agent-thing
-fi
-if [[ ! "$SSH_AUTH_SOCK" ]]; then
-    eval "$(<~/.ssh-agent-thing)"
-fi
-
-# enable font
-xset +fp /home/worldpotato/.local/share/fonts
-xset fp rehash
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source ~/Repositories/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-# added by travis gem
-[ -f /home/worldpotato/.travis/travis.sh ] && source /home/worldpotato/.travis/travis.sh
+# to enable ssh key at first start
+eval $(keychain --eval --quiet id_rsa )
 

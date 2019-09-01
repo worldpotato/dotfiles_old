@@ -111,3 +111,5 @@ export PATH="$PATH:/home/worldpotato/userscripts"
 # to enable ssh key at first start
 eval $(keychain --eval --quiet id_rsa )
 
+# syntax highlighting
+source ~/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

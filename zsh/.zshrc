@@ -62,7 +62,7 @@ ZSH_THEME="worldpotato"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux z command-not-found extract sudo fzf colored-man-pages zsh-syntax-highlighting)
+plugins=(git tmux z command-not-found extract sudo fzf colored-man-pages zsh-syntax-highlighting k)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +99,7 @@ alias vtop="vtop -t aid"
 alias tty-clock="tty-clock -sDcC 4"
 alias ip="ip -c"
 alias vi="vim"
+alias l="k -h"
 
 source /home/worldpotato/repos/dotfiles/zsh/z/z.sh
 

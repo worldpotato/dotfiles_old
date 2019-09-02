@@ -28,6 +28,11 @@ URxvt*color4: DarkCyan
 URxvt*color8: rgb:0c/60/5e
 URxvt*color12: DarkCyan
 
+! font color (default is black)
+URxvt*foreground: White
+
+! background color (prior to tinting) (default is white)
+URxvt*background: Black
 
 ! scrollbar - true (default) or false
 URxvt*scrollBar: false

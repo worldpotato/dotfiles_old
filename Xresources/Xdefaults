@@ -61,8 +61,9 @@ URxvt*visualBell:  true
 ! Perl extentions:
 ! clickable url
 URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
+
 !URxvt.colorUL: #279d9a
 URxvt.matcher.rend.0: Uline Bold fg8
 

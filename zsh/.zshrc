@@ -100,6 +100,7 @@ alias tty-clock="tty-clock -sDcC 4"
 alias ip="ip -c"
 alias vi="vim"
 alias l="k -h"
+alias ll="k -ah"
 
 source /home/worldpotato/repos/dotfiles/zsh/z/z.sh
 

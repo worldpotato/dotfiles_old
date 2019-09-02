@@ -58,6 +58,14 @@ URxvt*fading:  20
 ! Use visual bell on receipt of a bell character. Helpful to be used with inputrc and tmux.
 URxvt*visualBell:  true
 
+! Shift+ctrl to copy paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! Disable iso 14755 mode with shift+ctrl
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
 ! Perl extentions:
 ! clickable url
 URxvt.perl-ext-common: default,matcher

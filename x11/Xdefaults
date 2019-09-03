@@ -24,9 +24,36 @@ URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=14:antialias=true:hinti
 !  the following line to your ~/.bashrc ($HOME/.bashrc) file under
 !  the heading "# User specific aliases and functions":
 !   alias ls="ls -h --color=auto"
-URxvt*color4: DarkCyan
-URxvt*color8: rgb:0c/60/5e
-URxvt*color12: DarkCyan
+
+
+! Color scheme:
+!Normal      Bright
+!--------    -------
+!0 Black      8 Black
+!1 Red        9 Red
+!2 Yellow    10 Yellow
+!3 Green     11 Green
+!4 Blue      12 Blue
+!5 Magenta   13 Magenta
+!6 Cyan      14 Cyan
+!7 White     15 White
+
+URxvt*color0: Black
+URxvt*color1: Dark Orange
+URxvt*color2: Lime Green
+URxvt*color3: Goldenrod
+URxvt*color4: Dark Cyan
+URxvt*color5: Dark Orchid
+URxvt*color6: Teal
+URxvt*color7: Floral White
+URxvt*color8: Slate Grey
+URxvt*color9: Orange
+URxvt*color10: Lime
+URxvt*color11: Gold
+URxvt*color12: Cyan
+URxvt*color13: Dark Orchid
+URxvt*color14: Cadet Blue
+URxvt*color15: Floral White
 
 ! font color (default is black)
 URxvt*foreground: White
@@ -44,7 +71,7 @@ URxvt*scrollBar_right: false
 URxvt*scrollstyle: xterm
 
 ! do not scroll with output
-URxvt*scrollTtyOutput: false
+URxvt*scrollTtyOutput: true
 
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
 URxvt*scrollWithBuffer: true
@@ -53,7 +80,7 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
 ! Fade the text by the given percentage when focus is lost. This is neat, when I switch to a different window, or switch to a different machine ala synergy, it will fade the screen slightly.
-URxvt*fading:  20
+URxvt*fading: 20
 
 ! Use visual bell on receipt of a bell character. Helpful to be used with inputrc and tmux.
 URxvt*visualBell:  true

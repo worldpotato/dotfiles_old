@@ -2,6 +2,6 @@
 
 read -p "SSID: " ssid
 
-read -p "Password: " pw
+read -s "Password: " pw
 
 nmcli device wifi connect $ssid password $pw

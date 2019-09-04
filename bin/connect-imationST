@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo wpa_supplicant -B -c /etc/wpa_supplicant/imation_ST.conf -i wlp5s0
+sudo dhcpcd wlp5s0

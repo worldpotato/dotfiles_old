@@ -1,0 +1,7 @@
+#!/bin/bash
+
+read -p "SSID: " ssid
+
+read -p "Password: " pw
+
+nmcli device wifi connect $ssid password $pw

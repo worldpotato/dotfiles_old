@@ -96,7 +96,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vtop="vtop -t aid"
-alias tty-clock="tty-clock -sDcC 4"
+alias tty-clock="tty-clock -sbcC 4 -f %d.%m.%Y"
 alias ip="ip -c"
 alias vi="vim"
 alias l="k -h"

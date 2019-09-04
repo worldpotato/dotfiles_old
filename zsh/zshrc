@@ -108,7 +108,7 @@ eval $(thefuck --alias)
 
 # PATH 
 export PATH="$PATH:/home/worldpotato/Flutter/bin"
-export PATH="$PATH:/home/worldpotato/userscripts"
+export PATH="$PATH:/home/worldpotato/bin"
 
 # to enable ssh key at first start
 eval $(keychain --eval --quiet id_rsa )

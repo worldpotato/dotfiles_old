@@ -182,10 +182,10 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Touchpad behaviour
 #exec --no-startup-id xinput set-prop "ELAN0501:00 04F3:3037 Touchpad" "libinput Natural Scrolling Enabled Default" 1
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+#exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+#exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 #exec --no-startup-id xinput set-prop "ELAN0501:00 04F3:3037 Touchpad" "libinput Tapping Enabled" 1
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.8
+#exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.8
 
 # lockscreen
 bindsym $mod+End exec "~/.config/i3/fuzzy_lock.sh" 

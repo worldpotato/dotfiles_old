@@ -1,9 +1,0 @@
-#!/bin/sh
-#term.wrapper
-#Eterm Wrapper, to start a transparent terminal
-
-Eterm -Ox --foreground-color white --install on --shade 50 --scrollbar false --default-font-index 4 --buttonbar false font 0 -misc-fixed-medium-r-normal--7-*-*-*-c-*-iso8859-1
-font 1 -misc-fixed-medium-r-normal--10-*-*-*-c-*-iso8859-1
-font 2 -misc-fixed-medium-r-semicondensed--13-*-*-*-c-*-iso8859-1
-font 3 -misc-fixed-medium-r-normal--13-*-*-*-c-*-iso8859-1
-font 4 -misc-fixed-medium-r-normal--18-*-*-*-c-*-iso8859-1

@@ -118,3 +118,6 @@ eval $(keychain --eval --quiet id_rsa )
 
 # syntax highlighting
 source ~/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# added by travis gem
+[ -f /home/worldpotato/.travis/travis.sh ] && source /home/worldpotato/.travis/travis.sh

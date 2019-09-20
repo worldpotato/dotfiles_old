@@ -111,6 +111,7 @@ eval $(thefuck --alias)
 export PATH="$PATH:/home/worldpotato/Flutter/bin"
 export PATH="$PATH:/home/worldpotato/bin/display"
 export PATH="$PATH:/home/worldpotato/bin/wifi"
+export PATH="$PATH:/home/worldpotato/bin/misc"
 export PATH="$PATH:/home/worldpotato/.gem/ruby/2.6.0/bin"
 
 # to enable ssh key at first start

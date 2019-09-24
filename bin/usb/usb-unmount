@@ -5,12 +5,13 @@ echo "Connected storage devices:"
 lsblk | egrep -v 'nvme0n1'
 
 echo
-echo "Which partition should get mounted?"
+echo "Which partition should get unmounted?"
 
 read partition
 
+sudo umount ~/mnt/$partition
+
 if [ ! -d ~/mnt/$partition ]; then
-    mkdir ~/mnt/$partition
+    rm -rf ~/mnt/$partition
 fi
 
-sudo umount ~/mnt/$partition

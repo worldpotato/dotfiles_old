@@ -16,8 +16,8 @@ URxvt*saveLines: 12000
 
 ! Xft: DejaVu fonts
 !  Fedora/debian packages: dejavu-sans-mono-fonts/ttf-dejavu 
-URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=14:antialias=true:hinting=true
-URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=14:antialias=true:hinting=true
+URxvt*boldFont: xft:Hasklug Nerd Font:bold:pixelsize=16:antialias=true:hinting=true
+URxvt*font: xft:Hasklug Nerd Font:pixelsize=16:antialias=true:hinting=true
 
 ! Replace blue folder colors with a lighter shade for clarity. To
 !  set colored folders and files within urxvt, xterm, and aterm, add

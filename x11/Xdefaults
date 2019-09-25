@@ -68,7 +68,7 @@ URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 
 ! scrollbar style - rxvt (default), plain, next, or xterm
-URxvt*scrollstyle: xterm
+URxvt*scrollstyle: rxvt
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: true

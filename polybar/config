@@ -30,7 +30,7 @@ width = 100%
 height = 27
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
+radius = 3.0
 fixed-center = false
 bottom = true
 
@@ -50,9 +50,7 @@ module-margin-left = 1
 module-margin-right = 1
 
 font-1 = DejaVuSansMonoForPowerline Nerd Font:pixelsize=10:antialias=true:hinting=true
-;font-3 = DroidSansMonoForPowerline Nerd Font
 font-0 = siji
-;font-2 = 3270Medium Nerd Font:pixelsize=10:antialias=true:hinting=true
 
 modules-left = i3
 modules-center = 
@@ -60,7 +58,6 @@ modules-right = filesystem xbacklight pulseaudio memory cpu wlan eth battery tem
 
 tray-position = right
 tray-padding = 0
-;tray-background = #0063ff
 
 ;wm-restack = bspwm
 wm-restack = i3
@@ -279,7 +276,7 @@ label-volume = VOL %percentage%%
 label-volume-foreground = ${colors.foreground}
 
 label-muted = muted
-label-muted-foreground = ${colors.foreground}
+label-muted-foreground = ${colors.foreground-alt}
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55

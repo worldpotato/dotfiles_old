@@ -1,3 +1,4 @@
 #!/bin/bash
 
+echo "power on" | bluetoothctl
 echo "connect 00:16:94:3A:71:FD" | bluetoothctl

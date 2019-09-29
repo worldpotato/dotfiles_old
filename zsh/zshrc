@@ -115,6 +115,7 @@ export PATH="$PATH:/home/worldpotato/bin/misc"
 export PATH="$PATH:/home/worldpotato/bin/usb"
 export PATH="$PATH:/home/worldpotato/bin/bluetooth"
 export PATH="$PATH:/home/worldpotato/.gem/ruby/2.6.0/bin"
+export PATH="$PATH:/home/worldpotato/go/bin"
 
 # to enable ssh key at first start
 eval $(keychain --eval --quiet id_rsa )

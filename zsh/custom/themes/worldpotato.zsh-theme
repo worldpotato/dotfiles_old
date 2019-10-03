@@ -1,0 +1,1 @@
+/home/worldpotato/repos/dotfiles/zsh/worldpotato.zsh-theme

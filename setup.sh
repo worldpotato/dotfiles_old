@@ -37,7 +37,7 @@ else
 fi 
 
 
-echo "Create link to zsh theme and config? [Y/n]"
+echo "Create link to zsh custom folder? [Y/n]"
 read input
 
 if [ "$input" = "n" ] || [ "$input" = "N" ];
@@ -45,7 +45,7 @@ then
     cowsay "...ok..."
 else
     ln -sf $LOCATION/zsh/zshrc ~/.zshrc
-    ln -sf $LOCATION/zsh/worldpotato.zsh-theme ~/.oh-my-zsh/themes/worldpotato.zsh-theme
+    ln -sf $LOCATION/zsh/custom ~/.oh-my-zsh/custom
     echo "links created"
 fi 
 

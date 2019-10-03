@@ -152,6 +152,7 @@ assign [class="jetbrains-clion"] 1 ide
 assign [class="jetbrains-idea"] 1 ide
 assign [class="Texmaker"] 3 tex
 for_window [class="Spotify"] move to workspace Spotify
+for_window [title=".*\(Private Browsing\).*"] move to workspace 9 priv
 for_window [class="TeXstudio"] move to workspace 3 tex
 assign [class="TeXstudio"] 3 tex
 assign [class="Slack"] Com

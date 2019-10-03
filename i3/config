@@ -95,37 +95,51 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+x [urgent=latest] focus
 # workspace name-variables
 
+set $ws_cli zsh
+set $ws_1 1 ide
+set $ws_2 2 pdf
+set $ws_3 3 tex
+set $ws_4 4
+set $ws_5 5
+set $ws_6 6
+set $ws_7 7
+set $ws_8 8
+set $ws_9 9 priv
+set $ws_music music
+set $ws_Browser Browser
+set $ws_Mail Mail
+set $ws_Com Com
+
+
 # switch to workspace
-bindsym $mod+1 workspace 1 ide
-bindsym $mod+2 workspace 2 pdf
-bindsym $mod+3 workspace 3 tex
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace zsh
-bindsym $mod+s workspace Spotify
-bindsym $mod+b workspace Browser
-bindsym $mod+m workspace Mail
-bindsym $mod+c workspace Com
+bindsym $mod+0 workspace $ws_cli
+bindsym $mod+1 workspace $ws_1
+bindsym $mod+2 workspace $ws_2
+bindsym $mod+3 workspace $ws_3
+bindsym $mod+4 workspace $ws_4
+bindsym $mod+5 workspace $ws_5
+bindsym $mod+6 workspace $ws_6
+bindsym $mod+7 workspace $ws_7
+bindsym $mod+8 workspace $ws_8
+bindsym $mod+9 workspace $ws_9
+bindsym $mod+b workspace $ws_Browser
+bindsym $mod+m workspace $ws_Mail
+bindsym $mod+c workspace $ws_Com
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1 ide
-bindsym $mod+Shift+2 move container to workspace 2 pdf
-bindsym $mod+Shift+3 move container to workspace 3 tex
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace zsh
-bindsym $mod+Shift+s move container to workspace Spotify
-bindsym $mod+Shift+b move container to workspace Browser
-bindsym $mod+Shift+m move container to workspace Mail
-bindsym $mod+Shift+c move container to workspace Com
+bindsym $mod+Shift+0 move container to workspace $ws_cli; workspace $ws_cli
+bindsym $mod+Shift+1 move container to workspace $ws_1; workspace $ws_1
+bindsym $mod+Shift+2 move container to workspace $ws_2; workspace $ws_2
+bindsym $mod+Shift+3 move container to workspace $ws_3; workspace $ws_3
+bindsym $mod+Shift+4 move container to workspace $ws_4; workspace $ws_4
+bindsym $mod+Shift+5 move container to workspace $ws_5; workspace $ws_5
+bindsym $mod+Shift+6 move container to workspace $ws_6; workspace $ws_6
+bindsym $mod+Shift+7 move container to workspace $ws_7; workspace $ws_7
+bindsym $mod+Shift+8 move container to workspace $ws_8; workspace $ws_8
+bindsym $mod+Shift+9 move container to workspace $ws_9; workspace $ws_9
+bindsym $mod+Shift+b move container to workspace $ws_Browser; workspace $ws_Browser
+bindsym $mod+Shift+m move container to workspace $ws_Mail; workspace $ws_Mail
+bindsym $mod+Shift+c move container to workspace $ws_Com; workspace $ws_Com
 
 # force a window on a named workspace
 assign [class="firefox"] Browser

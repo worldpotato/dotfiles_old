@@ -157,6 +157,10 @@ for_window [class="TeXstudio"] move to workspace 3 tex
 assign [class="TeXstudio"] 3 tex
 assign [class="Slack"] Com
 
+# move workspace between outputs
+bindsym $mod+p move workspace to output right
+bindsym $mod+n move workspace to output left 
+
 # reload the configuration file
 #bindsym $mod+Shift+c reload
 
@@ -254,7 +258,3 @@ gaps outer 1
 
 # Activate smart borders (always)
 smart_borders on
-
-# move workspace between outputs
-bindsym $mod+p move workspace to output right
-bindsym $mod+n move workspace to output left 

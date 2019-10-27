@@ -103,4 +103,16 @@ then
     cowsay "...ok..."
 else
     sudo ln -sf $LOCATION/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d/70-synaptics.conf
+    echo "link created"
 fi 
+
+echo "Create link to zathura config? [Y/n]"
+read input
+
+if [ "$input" = "n" ] || [ "$input" = "N" ];
+then
+    cowsay "...ok..."
+else
+    ln -s $LOCATION/zathura ~/.config/
+    echo "link created"
+fi

@@ -13,4 +13,6 @@ if [ ! -d ~/mnt/$partition ]; then
     mkdir ~/mnt/$partition
 fi
 
-sudo mount /dev/$partition ~/mnt/$partition
+
+pmount $partition
+

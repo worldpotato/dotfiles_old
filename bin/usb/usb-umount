@@ -9,9 +9,4 @@ echo "Which partition should get unmounted?"
 
 read partition
 
-sudo umount ~/mnt/$partition
-
-if [ ! -d ~/mnt/$partition ]; then
-    rm -rf ~/mnt/$partition
-fi
-
+pumount $partition

@@ -17,14 +17,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font DejaVu Sans Mono for Powerline
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
+font DejaVuSansMono Nerd Font, Hasklug Nerd Font, Symbola
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -36,11 +29,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
 
 # start dmenu2 (a program launcher)
-bindsym $mod+d exec dmenu_run -dim 0.6 -dc Black -h 20 -fn "DejaVu Sans Mono for Powerline:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec dmenu_run -dim 0.6 -dc Black -h 20 -fn "DejaVu Sans Mono Nerd Font:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
 
 # change focus
 bindsym $mod+h focus left
@@ -103,13 +92,12 @@ set $ws_4 4
 set $ws_5 5
 set $ws_6 6
 set $ws_7 7
-set $ws_8 8
+set $ws_8 8 VM
 set $ws_9 9 priv
 set $ws_music music
 set $ws_Browser Browser
 set $ws_Mail Mail
 set $ws_Com Com
-
 
 # switch to workspace
 bindsym $mod+0 workspace $ws_cli
@@ -154,8 +142,9 @@ assign [class="Texmaker"] 3 tex
 for_window [class="Spotify"] move to workspace Spotify
 for_window [title=".*\(Private Browsing\).*"] move to workspace 9 priv
 for_window [class="TeXstudio"] move to workspace 3 tex
-assign [class="TeXstudio"] 3 tex
-assign [class="Slack"] Com
+assign [class="TeXstudio"] $ws_3
+assign [class="Slack"] $ws_Com
+assign [class="VirtualBox Machine"] $ws_8
 
 # move workspace between outputs
 bindsym $mod+p move workspace to output right
@@ -229,13 +218,15 @@ exec --no-startup-id ~/.config/i3/fehbg
 
 # default start applications
 exec --no-startup-id firefox
-exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
 exec --no-startup-id nextcloud
 
 # compton with disabled shadows
 exec --no-startup-id compton -CGb
+
+# make default workspace
+exec --no-startup-id ~/repos/dotfiles/i3/create-workspace.sh
 
 # class                 border  backgr. text    indicator child_border
 # indicator: where would the next tile apear?

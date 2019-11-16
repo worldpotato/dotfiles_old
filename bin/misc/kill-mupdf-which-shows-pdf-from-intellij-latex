@@ -1,0 +1,8 @@
+#!/bin/sh
+pid=$(ps aux | grep mupdf | grep \? | awk '{print $2}') 2> /dev/null
+echo pid
+if [ -n "$pid" ]; then
+    kill $pid > /dev/null
+    exit 0
+fi
+exit 0

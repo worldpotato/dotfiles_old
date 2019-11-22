@@ -49,12 +49,12 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-1 = DejaVuSansMonoForPowerline Nerd Font:pixelsize=10:antialias=true:hinting=true
+font-1 = Monaco:pixelsize=10
 font-0 = siji
 
 modules-left = i3
 modules-center = 
-modules-right = filesystem xbacklight pulseaudio memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem xbacklight pulseaudio memory cpu wlan eth battery temperature date
 
 tray-position = right
 tray-padding = 0
@@ -288,11 +288,11 @@ bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = true
 bar-volume-indicator = | 
-bar-volume-indicator-font = 2
-bar-volume-fill = — 
-bar-volume-fill-font = 2
+bar-volume-indicator-font = 1
+bar-volume-fill = —
+bar-volume-fill-font = 1
 bar-volume-empty = —
-bar-volume-empty-font = 2
+bar-volume-empty-font = 1
 bar-volume-empty-foreground = ${colors.foreground}
 
 [module/alsa]
@@ -316,11 +316,11 @@ bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
+bar-volume-indicator-font = 1
+bar-volume-fill = −
+bar-volume-fill-font = 1
+bar-volume-empty = −
+bar-volume-empty-font = 1
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
@@ -380,11 +380,11 @@ type = custom/menu
 
 expand-right = true
 
-format-spacing = 1
+format-spacing = 2
 
-label-open = ⏻
+label-open = "⭘"
 label-open-foreground = ${colors.foreground}
-label-close =  cancel
+label-close = cancel
 label-close-foreground = ${colors.foreground-alt}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}

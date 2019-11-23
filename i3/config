@@ -29,7 +29,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
 
 # start dmenu2 (a program launcher)
-bindsym $mod+d exec dmenu_run -dim 0.6 -dc Black -h 20 -fn "DejaVu Sans Mono Nerd Font:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
+bindsym $mod+d exec dmenu_run -dim 0.6 -dc Black -h 20 -fn "monaco:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
 
 # change focus
 bindsym $mod+h focus left

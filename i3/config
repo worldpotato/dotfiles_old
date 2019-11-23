@@ -222,7 +222,7 @@ exec --no-startup-id thunderbird
 exec --no-startup-id nextcloud
 
 # compton with disabled shadows
-exec --no-startup-id compton -CGb
+exec --no-startup-id picom -CGb
 
 # make default workspace
 exec --no-startup-id ~/repos/dotfiles/i3/create-workspace.sh

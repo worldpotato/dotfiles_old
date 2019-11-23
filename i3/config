@@ -130,18 +130,18 @@ bindsym $mod+Shift+m move container to workspace $ws_Mail; workspace $ws_Mail
 bindsym $mod+Shift+c move container to workspace $ws_Com; workspace $ws_Com
 
 # force a window on a named workspace
-assign [class="firefox"] Browser
-assign [class="Thunderbird"] Mail
-assign [class="Master PDF Editor 5"] 2 pdf
-for_window [class="Foxit Reader"] move to workspace 2 pdf
-for_window [class="MATLAB R2019a - academic use"] move to workspace 1 ide
-assign [class="jetbrains-studio"] 1 ide
-assign [class="jetbrains-clion"] 1 ide
-assign [class="jetbrains-idea"] 1 ide
-assign [class="Texmaker"] 3 tex
-for_window [class="Spotify"] move to workspace Spotify
-for_window [title=".*\(Private Browsing\).*"] move to workspace 9 priv
-for_window [class="TeXstudio"] move to workspace 3 tex
+assign [class="firefox"] $ws_Browser
+assign [class="Thunderbird"] $ws_Mail
+assign [class="Master PDF Editor 5"] $ws_2
+for_window [class="Foxit Reader"] move to workspace $ws_2
+for_window [class="MATLAB R2019b - academic use" title="^Fig"] move to workspace $ws_4
+for_window [class="MATLAB R2019b - academic use"] move to workspace $ws_1
+assign [class="jetbrains-studio"] $ws_1
+assign [class="jetbrains-clion"] $ws_1
+assign [class="jetbrains-idea"] $ws_1
+assign [class="Texmaker"] $ws_3
+for_window [title=".*\(Private Browsing\).*"] move to workspace $ws_9
+for_window [class="TeXstudio"] move to workspace $ws_3
 assign [class="TeXstudio"] $ws_3
 assign [class="Slack"] $ws_Com
 assign [class="VirtualBox Machine"] $ws_8

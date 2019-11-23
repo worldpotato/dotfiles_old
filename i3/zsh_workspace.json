@@ -19,8 +19,8 @@
             "percent": 0.6,
             "swallows": [
                {
-                "class": "^URxvt$",
-                "instance": "^urxvt$",
+                "class": "^Termite$",
+                "instance": "^termite$",
                 "title": "^first$"
                }
             ],
@@ -47,8 +47,8 @@
                     "percent": 0.20,
                     "swallows": [
                        {
-                        "class": "^URxvt$",
-                        "instance": "^urxvt$",
+                        "class": "^Termite$",
+                        "instance": "^termite$",
                         "title": "^clock$"
                        }
                     ],
@@ -68,8 +68,8 @@
                     "percent": 0.8,
                     "swallows": [
                        {
-                        "class": "^URxvt$",
-                        "instance": "^urxvt$",
+                        "class": "^Termite$",
+                        "instance": "^termite$",
                         "title": "^gotop$"
                        }
                     ],

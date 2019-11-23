@@ -1,0 +1,34 @@
+[colors]
+background = rgba(0, 0, 0, 0.4)
+# Color scheme:
+#Normal      Bright
+#--------    -------
+#0 Black      8 Black
+#1 Red        9 Red
+#2 Green     10 Green
+#3 Orange    11 Orange
+#4 Blue      12 Blue
+#5 Magenta   13 Magenta
+#6 Cyan      14 Cyan
+#7 White     15 White
+
+color0 = #0b3342
+color1 = #CC0000 
+color2 = #11c13d
+color3 = #e6a909
+color4 = #279d9a
+color5 = #B319FF
+color6 = #0c605e
+color7 = #dddddd
+color8 = #053333
+color9 = #DD0000
+color10 = #33e35f
+color11 = #e6a909
+color12 = #49bfac
+color13 = #B319FFd
+color14 = #0e827f
+color15 = #000000
+
+
+[options]
+font = monaco 11

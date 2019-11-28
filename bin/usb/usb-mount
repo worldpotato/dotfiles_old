@@ -9,10 +9,5 @@ echo "Which partition should get mounted?"
 
 read partition
 
-if [ ! -d ~/mnt/$partition ]; then
-    mkdir ~/mnt/$partition
-fi
-
-
 pmount $partition
 

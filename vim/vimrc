@@ -1,4 +1,4 @@
-" ============================== Vundle Start ===================== 
+" ============================== Vundle Start ====================
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -10,7 +10,18 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-latex/vim-latex'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'daeyun/vim-matlab'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'mhinz/vim-signify', { 'branch': 'legacy' }
+Plugin 'tpope/vim-fugitive'
+Plugin 'lervag/vimtex'
+Plugin 'ryanoasis/vim-devicons'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -31,6 +42,7 @@ Plugin 'vim-latex/vim-latex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -49,9 +61,9 @@ filetype plugin indent on    " required
 set number
 
 " see the numbers of lines and characters at the buttom
-set ruler
+"set ruler
 
-" Syntax 
+" Syntax
 syntax on
 
 " Behavior of tab stop
@@ -60,13 +72,14 @@ set tabstop=4
 set shiftwidth=4
 
 " enable mouse
-set mouse=a
+" set mouse=a
 
 " autoreads a file if it is changed outside
 set autoread
 
+set guifont=Source\ Code\ Pro
 " Height of the command bar
-set cmdheight=1
+set cmdheight=2
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
@@ -75,7 +88,7 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -89,27 +102,64 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
+set clipboard=unnamedplus
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
 
-autocmd FileType tex setlocal spell spelllang=en_us
+" close NERDTree if the only window left open is a Nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" NERDTree automatic launch
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" autostart NERDTree
+autocmd VimEnter * NERDTree | wincmd p
+
+" NERDTree ignore array
+let NERDTreeIgnore = ['\.aux$']
+
+"autocmd FileType tex setlocal spell spelllang=en_us
+
+" vimtex
+let g:vimtex_compiler_method='arara'
+let g:vimtex_mappings_enabled = 1
+let g:vimtex_view_method='zathura'
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
+let g:airline_theme='raven'
+" air-line
+let g:airline_powerline_fonts = 1
 
-" Format the status line
-set statusline=\ %F%m%r%h\ %m\ %=\ \ Line:\ %l:%c\ %p%%
-function! GitBranch()
-  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-endfunction
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
 
-function! StatuslineGit()
-  let l:branchname = GitBranch()
-  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
-endfunction
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
 
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''

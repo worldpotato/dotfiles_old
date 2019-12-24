@@ -9,22 +9,17 @@ URxvt*transparent: true
 
 ! shading - 0 to 99 darkens, 101 to 200 lightens.
 !   Dont use with tintColor; just use a darker or lighter color instead.
-URxvt*shading: 80
 
-! scrollback buffer lines - 65535 is max on most machines (64 is default)
-URxvt*saveLines: 12000
+#define font1 Monaco
+#define font2
+#define font3
+#define font4
+#define font5 Symbola
 
-! Xft: DejaVu fonts
-!  Fedora/debian packages: dejavu-sans-mono-fonts/ttf-dejavu 
-URxvt*boldFont: xft:Hasklug Nerd Font:bold:pixelsize=16:antialias=true:hinting=true
-URxvt*font: xft:Hasklug Nerd Font:pixelsize=16:antialias=true:hinting=true
+URxvt*boldFont:     xft:font1:pixelsize=16:antialias=true:hinting=true:minspace=False:bold, xft:font2:bold, xft:font5:bold
+URxvt*font:         xft:font1:pixelsize=16:antialias=true:hinting=true:minspace=False,      xft:font2,      xft:font5
 
-! Replace blue folder colors with a lighter shade for clarity. To
-!  set colored folders and files within urxvt, xterm, and aterm, add
-!  the following line to your ~/.bashrc ($HOME/.bashrc) file under
-!  the heading "# User specific aliases and functions":
-!   alias ls="ls -h --color=auto"
-
+URxvt*letterSpace: 1
 
 ! Color scheme:
 !Normal      Bright
@@ -109,3 +104,4 @@ URxvt.keysym.Control-Right:  \033[1;5C
 ! change font size on the fly
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
+

@@ -1,3 +1,2 @@
 [app] short title
 
-If neccessary a long description

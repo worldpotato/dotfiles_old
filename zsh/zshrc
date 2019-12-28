@@ -94,11 +94,9 @@ export LANG=en_US.UTF-8
 alias vtop="vtop -t aid"
 alias tty-clock="tty-clock -sbcDC 4 -f %d.%m.%Y"
 alias ip="ip -c"
-alias vi="vim"
 alias l="k -h"
 alias ll="k -ah"
 alias viless="/usr/share/vim/vim81/macros/less.sh"
-alias git="hub"
 
 source /home/worldpotato/repos/dotfiles/zsh/z/z.sh
 

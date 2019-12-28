@@ -102,7 +102,7 @@ source /home/worldpotato/repos/dotfiles/zsh/z/z.sh
 
 eval $(thefuck --alias)
 
-# PATH 
+# PATH
 export PATH="$PATH:/home/worldpotato/Flutter/flutter/bin"
 export PATH="$PATH:/home/worldpotato/bin/display"
 export PATH="$PATH:/home/worldpotato/bin/wifi"

@@ -62,7 +62,7 @@ ZSH_THEME="worldpotato"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux z command-not-found extract sudo fzf colored-man-pages zsh-syntax-highlighting k)
+plugins=(git httpie z command-not-found extract sudo colored-man-pages zsh-syntax-highlighting k pass fzf gpg-agent)
 
 source $ZSH/oh-my-zsh.sh
 

@@ -149,7 +149,7 @@ assign [class="VirtualBox Machine"] $ws_8
 
 # move workspace between outputs
 bindsym $mod+p move workspace to output right
-bindsym $mod+n move workspace to output left 
+bindsym $mod+n move workspace to output left
 
 # reload the configuration file
 #bindsym $mod+Shift+c reload
@@ -202,7 +202,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.8
 
 # lockscreen
-bindsym $mod+Escape exec "~/.config/i3/fuzzy_lock.sh" 
+bindsym $mod+Escape exec "~/.config/i3/fuzzy_lock.sh"
 exec --no-startup-id xautolock -time 20 -locker '~/.config/i3/fuzzy_lock.sh' &
 
 # sound
@@ -229,7 +229,7 @@ exec --no-startup-id ~/repos/dotfiles/i3/create-workspace.sh
 
 # class                 border  backgr. text    indicator child_border
 # indicator: where would the next tile apear?
-client.focused          #FF0000 #FF0000 #000000 #F7CA2A   #F7CA2A 
+client.focused          #FF0000 #FF0000 #000000 #F7CA2A   #F7CA2A
 client.focused_inactive #FF0000 #FF0000 #FF0000 #279D9A   #279D9A
 client.unfocused        #FF0000 #FF0000 #FF0000 #FF0000   #279D9A
 client.urgent           #FF0000 #FF0000 #000000 #900000   #FF0000

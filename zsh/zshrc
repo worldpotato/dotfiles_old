@@ -65,7 +65,6 @@ ZSH_THEME="worldpotato"
 plugins=(git httpie z command-not-found extract sudo colored-man-pages zsh-syntax-highlighting k pass fzf gpg-agent)
 
 source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

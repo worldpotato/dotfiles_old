@@ -217,7 +217,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightnes
 # background
 exec --no-startup-id ~/.config/i3/fehbg
 
-# default start applications
+# autostart start applications
 exec --no-startup-id firefox
 exec --no-startup-id thunderbird
 

@@ -227,6 +227,9 @@ exec --no-startup-id picom -CGb
 # make default workspace
 exec --no-startup-id ~/repos/dotfiles/i3/create-workspace.sh
 
+# start dunst for notifications
+exec --no-startup-id /usr/bin/dunst
+
 # class                 border  backgr. text    indicator child_border
 # indicator: where would the next tile apear?
 client.focused          #FF0000 #FF0000 #000000 #F7CA2A   #F7CA2A

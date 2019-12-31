@@ -1,0 +1,15 @@
+[Unit]
+Description=A service to sync nextcloud.
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+ExecStart=/home/worldpotato/repos/dotfiles/bin/misc/nextcloud-sync
+WorkingDirectory=/home/worldpotato/
+
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nextcloud-sync
+
+[Install]
+WantedBy=multi-user.target

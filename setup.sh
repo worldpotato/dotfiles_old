@@ -120,6 +120,6 @@ if [ "$input" = "n" ] || [ "$input" = "N" ];
 then
     cowsay "...ok..."
 else
-    ln -s $LOCATION/zathura ~/.config/
+    ln -s $LOCATION/zathura ~/.config/zathura
     echo "link created"
 fi

@@ -25,6 +25,7 @@ else
     echo "link created"
 fi
 
+
 echo "Create link to polybar config? [Y/n]"
 read input
 
@@ -49,6 +50,7 @@ else
     echo "links created"
 fi
 
+
 echo "Create link to xdefault/xinitrc/xmodmap? (for urxvt) [Y/n]"
 read input
 
@@ -62,6 +64,7 @@ else
     echo "links created"
 fi
 
+
 echo "Create link to bin folder (userscripts)? [Y/n]"
 read input
 
@@ -73,6 +76,7 @@ else
     echo "link created"
 fi
 
+
 echo "Create link to vifm? [Y/n]"
 read input
 
@@ -82,7 +86,8 @@ then
 else
     ln -sf $LOCATION/vifm ~/.vifm
     echo "link created"
-fi 
+fi
+
 
 echo "Create link to compton? [Y/n]"
 read input
@@ -95,6 +100,7 @@ else
     echo "link created"
 fi
 
+
 echo "Create link to synaptics config? [Y/n]"
 read input
 
@@ -104,7 +110,8 @@ then
 else
     sudo ln -sf $LOCATION/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d/70-synaptics.conf
     echo "link created"
-fi 
+fi
+
 
 echo "Create link to zathura config? [Y/n]"
 read input

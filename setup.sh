@@ -4,7 +4,7 @@ LOCATION=$( cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P )
 echo "use commit template for the dotfile repository? [y/n]"
 read input
 
-if [ "$input" = "n" ] || [ "$input" = "N" ];
+if [ "$input" = "n" ] || [ "$input" = "n" ];
 then
     cowsay "...ok..."
 else

@@ -1,4 +1,21 @@
 #!/bin/bash
+#
+# Handled configs:
+# Git for dotfile repo
+# i3
+# polybar
+# zsh
+# xinit/xmodmap
+# bin folder
+# vifm
+# picom
+# synaptics
+# zathura
+# qutebrowser
+# alacritty
+# vim
+# dunst
+
 LOCATION=$( cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P )
 
 echo "use commit template for the dotfile repository? [y/n]"

@@ -108,7 +108,7 @@ if [ "$input" = "n" ] || [ "$input" = "N" ];
 then
     cowsay "...ok..."
 else
-    sudo ln -sf $LOCATION/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d/70-synaptics.conf
+    sudo ln -sf $LOCATION/x11/70-synaptics.conf /etc/X11/xorg.conf.d/70-synaptics.conf
     echo "link created"
 fi
 

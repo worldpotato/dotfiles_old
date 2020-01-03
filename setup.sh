@@ -11,7 +11,7 @@ else
     git config --local commit.template ./.commit_template.txt
     echo "git config set"
     echo "input: $input"
-fi 
+fi
 
 
 echo "Create link to i3 config? [Y/n]"
@@ -23,7 +23,7 @@ then
 else
     ln -sf $LOCATION/i3/ ~/.config/i3
     echo "link created"
-fi 
+fi
 
 echo "Create link to polybar config? [Y/n]"
 read input
@@ -34,7 +34,7 @@ then
 else
     ln -sf $LOCATION/polybar ~/.config/polybar
     echo "link created"
-fi 
+fi
 
 
 echo "Create link to zsh custom folder? [Y/n]"
@@ -47,7 +47,7 @@ else
     ln -sf $LOCATION/zsh/zshrc ~/.zshrc
     ln -sf $LOCATION/zsh/custom ~/.oh-my-zsh/custom
     echo "links created"
-fi 
+fi
 
 echo "Create link to xdefault/xinitrc/xmodmap? (for urxvt) [Y/n]"
 read input
@@ -71,7 +71,7 @@ then
 else
     ln -sf $LOCATION/bin ~/bin
     echo "link created"
-fi 
+fi
 
 echo "Create link to vifm? [Y/n]"
 read input
@@ -93,7 +93,7 @@ then
 else
     ln -sf $LOCATION/compton ~/.config/compton
     echo "link created"
-fi 
+fi
 
 echo "Create link to synaptics config? [Y/n]"
 read input

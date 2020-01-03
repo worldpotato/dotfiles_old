@@ -160,3 +160,15 @@ else
     echo "link created"
 fi
 
+
+echo "Create link to dunst config? [Y/n]"
+read input
+
+if [ "$input" = "n" ] || [ "$input" = "N" ];
+then
+    cowsay "...ok..."
+else
+    ln -s $LOCATION/dunst ~/.config/dunst
+    echo "link created"
+fi
+

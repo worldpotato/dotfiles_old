@@ -9,14 +9,14 @@
 dark = #0B3342
 notSoDark = #0C605E
 mid = #279D9A
-notSoBright = #68B684
+brightFont = #cccccc
 bright = #F7CA2A
 darkOrchid = #9932CC
 
 background = #000
 background-alt = ${colors.dark}
 ;for font
-foreground = ${colors.notSoBright} 
+foreground = ${colors.brightFont}
 foreground-alt = ${colors.mid}
 ;for underline
 primary = ${colors.notSoDark}

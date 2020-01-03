@@ -136,3 +136,15 @@ else
     echo "link created"
 fi
 
+
+echo "Create link to alacritty config? [Y/n]"
+read input
+
+if [ "$input" = "n" ] || [ "$input" = "N" ];
+then
+    cowsay "...ok..."
+else
+    ln -s $LOCATION/alacritty ~/.config/alacritty
+    echo "link created"
+fi
+

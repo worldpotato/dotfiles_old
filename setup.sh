@@ -89,14 +89,14 @@ else
 fi
 
 
-echo "Create link to compton? [Y/n]"
+echo "Create link to picom? [Y/n]"
 read input
 
 if [ "$input" = "n" ] || [ "$input" = "N" ];
 then
     cowsay "...ok..."
 else
-    ln -sf $LOCATION/compton ~/.config/compton
+    ln -sf $LOCATION/picom ~/.config/picom
     echo "link created"
 fi
 

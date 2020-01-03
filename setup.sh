@@ -148,3 +148,15 @@ else
     echo "link created"
 fi
 
+
+echo "Create link to vimrc [Y/n]"
+read input
+
+if [ "$input" = "n" ] || [ "$input" = "N" ];
+then
+    cowsay "...ok..."
+else
+    ln -s $LOCATION/vim/vimrc ~/.vimrc
+    echo "link created"
+fi
+

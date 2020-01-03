@@ -1,7 +1,7 @@
 #!/bin/bash
 LOCATION=$( cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P )
 
-echo "Use commit template for the dotfile repository? [Y/n]"
+echo "use commit template for the dotfile repository? [y/n]"
 read input
 
 if [ "$input" = "n" ] || [ "$input" = "N" ];

@@ -123,3 +123,16 @@ else
     ln -s $LOCATION/zathura ~/.config/zathura
     echo "link created"
 fi
+
+
+echo "Create link to qutebrowser config? [Y/n]"
+read input
+
+if [ "$input" = "n" ] || [ "$input" = "N" ];
+then
+    cowsay "...ok..."
+else
+    ln -s $LOCATION/qutebrowser ~/.config/qutebrowser
+    echo "link created"
+fi
+

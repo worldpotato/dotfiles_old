@@ -18,7 +18,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font monaco, Symbola
+font Source Code Pro, Symbola
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -30,7 +30,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
 
 # start dmenu2 (a program launcher)
-bindsym $mod+d exec dmenu_run -dim 0.6 -dc Black -h 20 -fn "monaco:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
+bindsym $mod+d exec dmenu_run -dim 0.6 -dc Black -h 20 -fn "Source Code Pro:pixelsize=14" -nb "Teal" -sb "Dark Orange" -sf Black -nf Black -p ">"
 
 # change focus
 bindsym $mod+h focus left

@@ -202,8 +202,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.8
 
 # lockscreen
-bindsym $mod+Escape exec "~/.config/i3/fuzzy_lock.sh"
-exec --no-startup-id xautolock -time 20 -locker '~/.config/i3/fuzzy_lock.sh' &
+bindsym $mod+Escape exec "loginctl lock-session"
+exec --no-startup-id "/home/worldpotato/.config/i3/start-xss.sh"
 
 # sound
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume

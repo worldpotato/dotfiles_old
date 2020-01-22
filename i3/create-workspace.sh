@@ -1,9 +1,9 @@
 #!/bin/bash
 
-i3-msg "workspace zsh; append_layout ~/repos/dotfiles/i3/zsh_workspace.json"
+i3-msg "workspace zsh; append_layout ~/repos/dotfiles/i3/workspace-clean.json"
 
-alacritty --title=first --working-directory /home/worldpotato/ &
-alacritty --title=gotop -e /usr/bin/gotop &
-alacritty --title=clock -e /usr/bin/tty-clock -sbcDC 4 -f %d.%m.%Y &
+termite --title=first --directory=/home/worldpotato/ &
+termite --title=gotop -e /usr/bin/gotop &
+termite --title=clock -e "/usr/bin/tty-clock -sbcDC 4 -f %d.%m.%Y" &
 
 i3-msg restart

@@ -1,0 +1,68 @@
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 400,
+       "width": 640,
+       "x": 0,
+       "y": 0
+    },
+    "name": "first",
+    "percent": 0.65,
+    "swallows": [
+       {
+        "title": "^first$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.35,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 400,
+               "width": 640,
+               "x": 0,
+               "y": 0
+            },
+            "name": "clock",
+            "percent": 0.17,
+            "swallows": [
+               {
+                "title": "^clock$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 400,
+               "width": 640,
+               "x": 0,
+               "y": 0
+            },
+            "name": "gotop",
+            "percent": 0.83,
+            "swallows": [
+               {
+                "title": "^gotop$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

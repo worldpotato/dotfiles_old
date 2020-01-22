@@ -15,14 +15,16 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'daeyun/vim-matlab'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'mhinz/vim-signify', { 'branch': 'legacy' }
+Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-fugitive'
 Plugin 'lervag/vimtex'
 Plugin 'ryanoasis/vim-devicons'
-
+Plugin 'skanehira/preview-markdown.vim'
+Plugin 'lazywei/vim-matlab'
+Plugin 'francoiscabrol/ranger.vim'
+Plugin 'junegunn/fzf.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo

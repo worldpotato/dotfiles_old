@@ -1,3 +1,6 @@
 [submodule "zsh/custom/plugins/k"]
 	path = zsh/custom/plugins/k
 	url = git@github.com:supercrabtree/k.git
+[submodule "zsh/custom/plugins/zsh/custom/plugins/fzf-tab"]
+	path = zsh/custom/plugins/zsh/custom/plugins/fzf-tab
+	url = git@github.com:Aloxaf/fzf-tab.git

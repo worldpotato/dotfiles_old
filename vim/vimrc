@@ -65,8 +65,12 @@ set number
 " see the numbers of lines and characters at the buttom
 "set ruler
 
+" colorscheme
+colorscheme worldpotato
 " Syntax
 syntax on
+set cursorline
+set cursorcolumn
 
 " Behavior of tab stop
 set expandtab
@@ -79,9 +83,9 @@ set shiftwidth=4
 " autoreads a file if it is changed outside
 set autoread
 
-set guifont=Source\ Code\ Pro
+set guifont=JetBrains\ Mono
 " Height of the command bar
-set cmdheight=1
+set cmdheight=2
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
@@ -191,4 +195,7 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
+set linebreak
+
+let g:preview_markdown_vertical = 1
 

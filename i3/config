@@ -230,14 +230,35 @@ exec --no-startup-id ~/repos/dotfiles/i3/create-workspace.sh
 
 # start dunst for notifications
 exec --no-startup-id /usr/bin/dunst
+## Normal
+
+set $black #022222
+set $red #aa0000
+set $green #01a10b
+set $yellow #a68904
+set $blue #279d9a
+set $magenta #9010cc
+set $cyan #0c605e
+set $white #b0b0b0
+
+## Bright
+
+set $bright_black #033333
+set $bright_red #dd0000
+set $bright_green #33e35f
+set $bright_yellow #e6a909
+set $bright_blue #49bfac
+set $bright_magenta #b319ff
+set $bright_cyan #0e827f
+set $bright_white #d0d0d0
 
 # class                 border  backgr. text    indicator child_border
 # indicator: where would the next tile apear?
-client.focused          #FF0000 #FF0000 #000000 #F7CA2A   #F7CA2A
-client.focused_inactive #FF0000 #FF0000 #FF0000 #279D9A   #279D9A
-client.unfocused        #FF0000 #FF0000 #FF0000 #FF0000   #279D9A
-client.urgent           #FF0000 #FF0000 #000000 #900000   #FF0000
-client.placeholder      #FF0000 #FF0000 #000000 #000000   #ff0000
+client.focused          #FF0000 #FF0000 #000000 $bright_yellow   $bright_yellow
+client.focused_inactive #FF0000 #FF0000 #FF0000 $cyan     $cyan
+client.unfocused        #FF0000 #FF0000 #FF0000 $cyan     $cyan
+client.urgent           #FF0000 #FF0000 #000000 $red      $red
+client.placeholder      #FF0000 #FF0000 #000000 #000000   $magenta
 
 client.background       #0B486B
 

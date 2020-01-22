@@ -89,7 +89,7 @@ set $ws_cli zsh
 set $ws_1 1 ide
 set $ws_2 2 pdf
 set $ws_3 3 tex
-set $ws_4 Spotify
+set $ws_4 4 Spotify
 set $ws_5 5
 set $ws_6 6
 set $ws_7 7

@@ -66,11 +66,11 @@ color0 = #022222
 #: red
 color1 = #aa0000
 #: green
-color2 = #01a10b
+color2 = #5A9A00
 #: yellow
 color3 = #a68904
 #: blue
-color4 = #279d9a
+color4 = #267D95
 #: magenta
 color5 = #9010cc
 #: cyan
@@ -84,11 +84,11 @@ color8 = #033333
 #: red
 color9 = #dd0000
 #: green
-color10 = #33e35f
+color10 = #79CF00
 #: yellow
 color11 = #e6a909
 #: blue
-color12 = #49bfac
+color12 = #31A4C4
 #: magenta
 color13 = #b319ff
 #: cyan

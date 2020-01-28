@@ -10,21 +10,25 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'mhinz/vim-signify'
-Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree' " nerdtree on the right
+Plugin 'Xuyuanp/nerdtree-git-plugin' " shows git status in nerdtree
+Plugin 'scrooloose/nerdcommenter' " simple commenting
+Plugin 'vim-airline/vim-airline' " better statusbar
+Plugin 'vim-airline/vim-airline-themes' " beatuiful airline
+Plugin 'airblade/vim-gitgutter'
+" Plugin 'mhinz/vim-signify' " shows the left column with git changes
+Plugin 'tpope/vim-fugitive' " git commands inside vim
 Plugin 'lervag/vimtex'
-Plugin 'ryanoasis/vim-devicons'
-Plugin 'skanehira/preview-markdown.vim'
-Plugin 'lazywei/vim-matlab'
-Plugin 'francoiscabrol/ranger.vim'
-Plugin 'junegunn/fzf.vim'
+Plugin 'ryanoasis/vim-devicons' " icons in nerdtree and statusbar
+Plugin 'skanehira/preview-markdown.vim' " add preview for markdown
+Plugin 'lazywei/vim-matlab' " add matlab syntax
+Plugin 'francoiscabrol/ranger.vim' " adds ranger inside vim
+Plugin 'junegunn/fzf.vim' " fuzzy search for everything
+
+" TODO: Learn the following plugins
+" Plugin 'tpope/vim-surround'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo

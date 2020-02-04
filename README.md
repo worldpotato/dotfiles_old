@@ -1,4 +1,1 @@
-# dotfiles
-My Dotfiles for some apps I use. I use soft-links to bring the files to the right place.
-
-Use the `setup.sh` script to create the softlinks.
+I decided to start a new dotfiles repo with a new setting. Which means I'm following https://www.atlassian.com/git/tutorials/dotfiles that introduction.
